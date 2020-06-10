@@ -5,6 +5,7 @@ import Utils from "../shared/Utils";
 
 import AutoTag from "./features/AutoTag";
 import CleanEnvironment from "./features/CleanEnvironment";
+import UXView from "./features/UXView";
 import Configuration from "./features/configurations/ConfigurationManager";
 import FeatureBase from "./features/FeatureBase";
 import WhatsappMarkdown from "./features/WhatsappMarkdown";
@@ -26,6 +27,10 @@ export const features: { name: string, processor: FeatureBase }[] = [
     {
         name: "configuration",
         processor: new Configuration(),
+    },
+    {
+        name: "uxview",
+        processor: new UXView(),
     },
 ];
 
